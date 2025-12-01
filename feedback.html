@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: whitesmoke;">
+    <section class="header">
+        <a href="./index.html">
+            <div class="logo">
+                <h1 class="blogo">GOV Portal</h1>
+                <img src="./assets/logo.PNG" alt="logo" class="logopic">
+                <p class="slogo">Citizen Feedback & Report</p>
+            </div>
+        </a>
+        <input type="text" name="searchbar" placeholder="Search feedback, reports, offices..." class="sbar">
+        <div class="headlinks">
+            <ul class="links">
+                <li class="hlink"><a href="./feedback.html">Feedback</a></li>
+                <li class="hlink"><a href="./report.html">Report Issue</a></li>
+                <li class="hlink"><a href="./track_status.html">Track Status</a></li>
+                <li class="hlink"><a href="./offices.html">Offices</a></li>
+                <li class="hlink"><a href="./developer.html">Developer</a></li>
+                <li class="hlink"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        <img src="./assets/feedback.svg" alt="feedback icon" class="feedbackimg">
+        <h1 class="h1feed">Submit Your Feedback</h1>
+        <p class="feedbackp">Help us improve government services by sharing your thoughts and suggestion</p>
+    </div>
+    <div class="feedbackground">
+        <img src="./assets/form.PNG" alt="formicon" class="formicon">
+        <h2 class="feedbackh2">Feedback Form</h2>
+        <form action="">
+            <label for="fullname" class="feedbackfname">Full Name *</label>
+            <input type="text" name="fullname" id="fullname" class="feedbackfninput">
+            <label for="email" class="feedbackeadd">Email Address</label>
+            <input type="text" name="eaddress" class="feedbackeainput">
+            <label for="feedbacktype" class="feedbacktypelabel">Feedback Type</label>
+            <select name="feedbacktype" id="" class="feedbacktypeinput">
+                <option value="placeholder">Select a category</option>
+                <option value="ServiceQuality">ServiceQuality</option>
+                <option value="website or online">Website or Online services</option>
+                <option value="complaints">Complaints</option>
+                <option value="suggestion">Suggestion or Ideas</option>
+                <option value="appreciation">Appreciation</option>
+                <option value="Technical issue">Technical Issue</option>
+                <option value="info request">Information Request</option>
+                <option value="corruption">Corruption or Misconduct Report</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="subject" class="feedbacksublabel">Subject</label>
+            <input type="text" class="feedbacksubinput">
+            <label for="message" class="feedbackmsglabel">Your Message</label>
+            <input type="text" maxlength="500" name="message" id="" class="feedbackmsginput"
+                placeholder="Max 500 letters">
+            <button type="submit" class="feedbacksubbtn"
+                onclick="alert(`Your Feedback Has Been Submitted, We Thank You for your feedback`)"><img
+                    src="./assets/send.svg" alt="send icon" class="feedbacksendicon">Submit Feedback</button>
+        </form>
+    </div>
+    <footer class="footer feedfooter">
+        <div class="footer-inner">
+            <div>
+                <h4 class="govf">GOV Portal</h4>
+                <p class="govfp">Citizen Feedback & Report — connecting citizens to public services and information.</p>
+            </div>
+            <div class="quickl">
+                <h4>Quick links:</h4>
+                <li class="quickl1"><a href="./feedback.html">Submit Feedback</a></li>
+                <li class="quickl2"><a href="./report.html">Report Issue</a></li>
+                <li class="quickl3"><a href="./track_status.html">Track Status</a></li>
+                <li class="quickl4"><a href="./offices.html">Offices</a></li>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@gov.example"></a> contact@gov.example</p>
+                <p>Phone: +93708808081</p>
+            </div>
+            <div class="footer-col footer-col1">
+                <h4>Office hours</h4>
+                <p>Mon–Fri: 08:00–16:00</p>
+                <p>Sat–Sun: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 GOV Portal — All rights reserved.</div>
+    </footer>
+</body>
+
+</html>

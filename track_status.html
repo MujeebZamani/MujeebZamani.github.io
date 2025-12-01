@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: whitesmoke;">
+    <section class="header">
+        <a href="./index.html">
+            <div class="logo">
+                <h1 class="blogo">GOV Portal</h1>
+                <img src="./assets/logo.PNG" alt="logo" class="logopic">
+                <p class="slogo">Citizen Feedback & Report</p>
+            </div>
+        </a>
+
+        <input type="text" name="searchbar" placeholder="Search feedback, reports, offices..." class="sbar">
+        <div class="headlinks">
+            <ul class="links">
+                <li class="hlink"><a href="./feedback.html">Feedback</a></li>
+                <li class="hlink"><a href="./report.html">Report Issue</a></li>
+                <li class="hlink"><a href="./track_status.html">Track Status</a></li>
+                <li class="hlink"><a href="./offices.html">Offices</a></li>
+                <li class="hlink"><a href="./developer.html">Developer</a></li>
+                <li class="hlink"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="hsectionts">
+        <div>
+            <h1 class="herotsh1">Track Your Submission</h1>
+            <p class="herotsp1">Monitor the progress of your feedback and reported issues in real-time </p>
+            <p class="herotsp2">Enter your reference number below to check the current status of your Submission</p>
+        </div>
+    </section>
+
+    <section class="tsBodyContent">
+        <div class="tsbackground">
+            <h2 class="tsh2">Find your Submission</h2>
+
+
+            <div class="tsdivr">
+                <h3 class="tracklist tsrl">Reference Number</h3>
+                <h3 class="tsh3">Reference Number</h3>
+                <input type="search" class="tsrsinp">
+            </div>
+
+            <div class="tsdivem">
+                <h3 class="tracklist tsel">Email Address</h3>
+                <h3 class="tseml">Email Address</h3>
+                <input type="text" placeholder="Enter Your Email" class="tsiem">
+            </div>
+
+            <div class="tsdivp">
+                <h3 class="tracklist tspl">Phone Number</h3>
+                <h3 class="tslpl">Phone Number</h3>
+                <input class="tspi" type="tel" placeholder="Enter Phone Number">
+            </div>
+            <button class="tsbtn" id="tsbtn">Track Submission</button>
+        </div>
+        <div id="tracked">
+            <div class="tsbackground tsbackground2">
+                <h4 class="tsrnh4 tsbgh4">Reference Number</h4>
+                <h4 class="tssdh4 tsbgh4">Submission Date</h4>
+                <h4 class="tssth4 tsbgh4">Submission Type</h4>
+                <h4 class="tscsh4 tsbgh4">Current Status</h4>
+                <h3 class="tsbgh3 tsrnh3">REF-2025-001234</h3>
+                <h3 class="tsbgh3 tssdh3">NOV 10, 2025</h3>
+                <h3 class="tsbgh3 tssth3">Service Compliant</h3>
+                <h3 class="tsbgh3 tscsh3">IN REVIEW</h3>
+                <span class="tshr"></span>
+                <h4 class="tssubject">Subject</h4>
+                <p class="tssubjectp">Delayed Response to Permit Application-Application ID:PERM-2025-1234</p>
+                <span class="tshr1"></span>
+                <h4 class="tsoph4">Overall Progress</h4>
+                <span class="tsprogreesbar"></span>
+                <span class="tspblocater"></span>
+                <p class="tsprogp">75% Completed : Estimated completion:December 28,2025</p>
+                <h3 class="tsstimeline">Status Timeline</h3>
+                <div>
+                    <span class="circlegreen"></span>
+                    <span class="greenvline"></span>
+                    <span class="greenhline"></span>
+                    <h4 class="tsgreenh4">&checkmark;&nbsp;&nbsp;Submitted</h4>
+                    <p class="tsgreenp">Your feedback has been successfully received and entered to our system.A
+                        confirmation email has been sent to your registered email address.</p>
+                    <p class="tsgreenp1">NOV 11,2025-2:30 PM</p>
+                </div>
+                <div>
+                    <span class="circlegreen circlered"></span>
+                    <span class="greenvline redvline"></span>
+                    <span class="greenhline redhline"></span>
+                    <h4 class="tsredh4">&#128065;&nbsp;&nbsp;Under Review</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="govfooter">
+                <h4 class="govf">GOV Portal</h4>
+                <p class="govfp">Citizen Feedback & Report — connecting citizens to public services and
+                    information.</p>
+            </div>
+            <div class="quickl">
+                <h4>Quick links:</h4>
+                <li class="quickl1"><a href="./feedback.html">Submit Feedback</a></li>
+                <li class="quickl2"><a href="./report.html">Report Issue</a></li>
+                <li class="quickl3"><a href="./track_status.html">Track Status</a></li>
+                <li class="quickl4"><a href="./offices.html">Offices</a></li>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@gov.example"></a> contact@gov.example</p>
+                <p>Phone: +93708808081</p>
+            </div>
+            <div class="footer-col footer-col1">
+                <h4>Office hours</h4>
+                <p>Mon–Fri: 08:00–16:00</p>
+                <p>Sat–Sun: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 GOV Portal — All rights reserved.</div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

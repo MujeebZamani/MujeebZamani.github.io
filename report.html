@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: whitesmoke;">
+    <section class="header">
+        <a href="./index.html">
+            <div class="logo">
+                <h1 class="blogo">GOV Portal</h1>
+                <img src="./assets/logo.PNG" alt="logo" class="logopic">
+                <p class="slogo">Citizen Feedback & Report</p>
+            </div>
+        </a>
+        <input type="text" name="searchbar" placeholder="Search feedback, reports, offices..." class="sbar">
+        <div class="headlinks">
+            <ul class="links">
+                <li class="hlink"><a href="./feedback.html">Feedback</a></li>
+                <li class="hlink"><a href="./report.html">Report Issue</a></li>
+                <li class="hlink"><a href="./track_status.html">Track Status</a></li>
+                <li class="hlink"><a href="./offices.html">Offices</a></li>
+                <li class="hlink"><a href="./developer.html">Developer</a></li>
+                <li class="hlink"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        <img src="./assets/report_red.png" alt="report_icon" class="report_icon">
+        <h1 class="h1report">Report an Issue</h1>
+        <p class="reportp">Let us know about problems you've encountered with government services</p>
+    </div>
+    <div class="reportbackground">
+        <img src="./assets/bug.png" alt="formicon" class="reportformicon">
+        <h2 class="reportbackh2">Issue Report Form</h2>
+        <form action="">
+            <label for="fullname" class="reportbackfname">Full Name </label>
+            <input type="text" name="fullname" id="fullname" class="reportfninput">
+            <label for="email" class="reporteadd">Email Address</label>
+            <input type="text" name="eaddress" class="reporteainput">
+            <label for="issuetype" class="issuetypelabel">Issue Type</label>
+            <select name="issuetype" id="" class="issuetypeinput">
+                <option value="placeholder">Select issue type</option>
+                <option value="delayed_services">Delayed Services</option>
+                <option value="misconduct">Staff Misconduct / Unprofessional Behavior</option>
+                <option value="corruption">Corruption / Bribery</option>
+                <option value="incorrect_info">Incorrect information or Documents</option>
+                <option value="technical_error">System or Technical error</option>
+                <option value="accessibility+issue">Accessibility issue</option>
+                <option value="policy_concern">Policy or Rule Concern</option>
+                <option value="poor_com">Poor communication / Lack of response</option>
+                <option value="facility_problem">Infrastructures or Facility Problem</option>
+                <option value="security_concern">Security or Privacy concern</option>
+                <option value="payment_issue">Payment / Transaction issue</option>
+                <option value="fraudulent_activity">Fraudulent Activity</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="security_level" class="security_level">Security Level</label>
+            <select name="seclevel" id="" class="seclevel">
+                <option value="placeholder">Select severity</option>
+                <option value="public">Public (Low Security)</option>
+                <option value="Internal">Internal (Medium Security)</option>
+                <option value="Confidential">Confidential (High Security)</option>
+                <option value="top_secret">Top Secret (Very High Security)</option>
+            </select>
+            <label for="location" class="reportlocation">Location / Department</label>
+            <input type="text" class="reportlocationinput" placeholder="e.g.,Online Portal, Office Location">
+            <label for="message" class="reportmsglabel">Your Message</label>
+            <input type="text" maxlength="500" name="message" id="" class="reportmsginput"
+                placeholder="Max 500 letters">
+            <label for="Attachment" class="reportattach">Attachment(Optional)</label>
+            <input type="file" class="reportfile">
+            <p class="reportp2">Accepted format:PDF,JPG,PNG,DOC,DOCX(Max 5mb)</p>
+            <button type="submit" class="reportsubbtn"
+                onclick="alert(`Your Report Has Been Submitted, We will reach you as soon as possible`)"><img
+                    src="./assets/send.svg" alt="send icon" class="reportsendicon">Submit Feedback</button>
+        </form>
+    </div>
+    <footer class="footer reportfooter">
+        <div class="footer-inner">
+            <div>
+                <h4 class="govf">GOV Portal</h4>
+                <p class="govfp">Citizen Feedback & Report — connecting citizens to public services and information.</p>
+            </div>
+            <div class="quickl">
+                <h4>Quick links:</h4>
+                <li class="quickl1"><a href="./feedback.html">Submit Feedback</a></li>
+                <li class="quickl2"><a href="./report.html">Report Issue</a></li>
+                <li class="quickl3"><a href="./track_status.html">Track Status</a></li>
+                <li class="quickl4"><a href="./offices.html">Offices</a></li>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@gov.example"></a> contact@gov.example</p>
+                <p>Phone: +93708808081</p>
+            </div>
+            <div class="footer-col footer-col1">
+                <h4>Office hours</h4>
+                <p>Mon–Fri: 08:00–16:00</p>
+                <p>Sat–Sun: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 GOV Portal — All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
